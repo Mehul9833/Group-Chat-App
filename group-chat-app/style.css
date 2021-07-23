@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@100;400;700&display=swap');
+
+:root{
+    --purple: #674baf;
+    --white: #ffffff;
+    --light-purple: rgba(103,75,175,0.5);
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+.white-color{
+    color: white;
+}
+
+html,body{
+    background-color: var(--purple);
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+    /* Navbar */
+
+.navbar{
+    width: 100vw;
+    height: 150px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.fa-comment-alt{
+    font-size: 26px;
+}
+
+nav p{
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    margin-left: 10px;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-image img{
+    width: 100%;
+    height: auto;
+}
+
+#header-content h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+#header-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#header-content button{
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: var(--light-purple);
+}
+
+#header-content button:hover{
+    color: var(--purple);
+    transform: scale(1.1);
+}
+
+/* footer */
+.social-icons{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.social-icons a{
+    font-size: 30px;
+    margin: 0px 5px;
+    color: white;
+}
+
+
+/* for mobile */
+
+@media screen and (max-width: 600px){
+    .navbar{
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .container{
+        width: 100%;
+        display: block;
+    }
+
+    #header-content{
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #header-content h2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    #header-content p{
+        font-size: 22px;
+        margin: 0px 10px;
+        line-height: 30px;
+    }
+
+    #header-content button{
+        margin: 30px 0px 0px 10px; 
+    }
+
+    #header-content button:hover{
+        color: var(--purple);
+        transform: scale(1.1);
+    }
+
+}
+
+/* for tablets */
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+    #header-content{
+        padding-right: 20px;
+    }
+    #header-content p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 26px;
+        font-weight: 300;
+        margin-top: 10px;
+        text-align: justify;
+    }
+}
